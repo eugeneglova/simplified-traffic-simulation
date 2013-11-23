@@ -21,3 +21,9 @@ all vehicles pass through the traffic lights.
 - function as expected without any defects
 - make good use of OO design principles
 - represent the type of code that you would produce
+
+## Run
+
+```sh
+node app
+```
