@@ -103,12 +103,12 @@ Road.prototype.simulationStep = function() {
     // Get the very last vehicle position
     last_vehicle_position = Math.min.apply(null, vehicle_positions);
 
+    // Draw simulation to console
+    this.draw();
+
     // The simulation runs until
     // all vehicles pass through the traffic lights
     if (last_vehicle_position > this.last_traffic_light_position) return false;
-
-    // Draw simulation to console
-    this.draw();
 
     // Run next simulation step
     this.runSimulation();
