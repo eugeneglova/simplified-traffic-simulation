@@ -1,7 +1,7 @@
 var Road            = require('./modules/road'),
     Vehicle         = require('./modules/vehicle'),
     TrafficLight    = require('./modules/traffic-light'),
-    road            = {};
+    road;
 
 // Init the road with simulation step 1 second
 road = new Road(1000);
