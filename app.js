@@ -13,7 +13,8 @@ road.addVehicle(new Vehicle(20));
 road.addVehicle(new Vehicle(24));
 
 // Add traffic light at position 50 with a 'green' color
-road.addTrafficLight(new TrafficLight(50, 'green'));
+// and 10 seconds between change the color
+road.addTrafficLight(new TrafficLight(50, 'green', 10000));
 
 // Run the simulation
 road.run();

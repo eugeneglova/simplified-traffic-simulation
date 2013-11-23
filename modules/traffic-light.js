@@ -6,13 +6,13 @@
  */
 var TrafficLight = function(position, color, change_interval) {
     // Set initial position
-    this.position = position;
+    this.position = position || 0;
 
     // Set initial color
-    this.color = color;
+    this.color = color || 'red';
 
-    // Interval between changing the color
-    this.change_interval = 10000;
+    // Set initial change interval
+    this.change_interval = change_interval || 10000;
 
     // Set initial timer
     this.timer = 0;

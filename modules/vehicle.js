@@ -4,7 +4,7 @@
  */
 var Vehicle = function(position) {
     // Set initial position
-    this.position = position;
+    this.position = position || 0;
 
     return this;
 };

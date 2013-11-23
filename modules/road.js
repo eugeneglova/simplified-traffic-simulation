@@ -3,6 +3,9 @@
  * @param {Number} simulation_step Step of the simulation
  */
 var Road = function(simulation_step) {
+    // Set initial simulation step
+    this.simulation_step = simulation_step || 1000;
+
     // Reference to the vehicles
     this.vehicles = [];
 
@@ -11,9 +14,6 @@ var Road = function(simulation_step) {
 
     // Reference to the simulation step timeout identifier
     this.simulation_timeout_id = null;
-
-    // Reference to the simulation step
-    this.simulation_step = simulation_step;
 
     // Reference to the very last traffic light position (needs for stop simulation)
     this.last_traffic_light_position = 0;
